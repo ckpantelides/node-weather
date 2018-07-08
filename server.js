@@ -251,11 +251,11 @@ app.post('/', function (req, res, getWeather) {
         }
       });
     });
-
+/*
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
-/*
+*/
 // Use the environment variable or use a given port
 const PORT = process.env.PORT || 8080;
 
@@ -267,4 +267,3 @@ const server = http.createServer(handleRequest);
 server.listen(PORT, () => {
   console.log('Server listening on: http://localhost:%s', PORT);
 });
-*/
