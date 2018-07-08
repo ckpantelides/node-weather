@@ -5,9 +5,9 @@ const app = express();
 var geoip = require('geoip-lite');
 
 // darksky weather api key
-const apiKey = '71c3cf1a1b7f6003b89a311cd64c8c9d';
+const apiKey = process.env.darksky;
 // google geocode api key
-const googleKey = 'AIzaSyDKXRyAAjVhJQ6xP9C2AVpKjeQk9CYNHlw';
+const googleKey = process.env.google;
 
 // make static files available i.e. css
 app.use(express.static('public'));
@@ -30,6 +30,7 @@ app.get('/', function (req, res) {
   var geo = geoip.lookup(ip);
   console.log(geo);
   console.log(process.env.google);
+  console.log(process.env.darksky);
 
   // find lat & lon using geoip; default to London if lookup fails
   var lat = geo ? geo.ll[0] : '51.5074';
