@@ -5,9 +5,9 @@ const app = express();
 var geoip = require('geoip-lite');
 
 // darksky weather api key
-const apiKey = process.env.darsky;
+const apiKey = '71c3cf1a1b7f6003b89a311cd64c8c9d';
 // google geocode api key
-const googleKey = process.env.google;
+const googleKey = 'AIzaSyDKXRyAAjVhJQ6xP9C2AVpKjeQk9CYNHlw';
 
 // make static files available i.e. css
 app.use(express.static('public'));
