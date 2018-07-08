@@ -1,0 +1,131 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: times new roman;
+  background-color: #ffbdbd;
+
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 55px;
+  color: #06051d;
+  font-weight:normal;
+  padding-top: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #06051d;
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 20px;
+  font-weight:normal;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+img.tempIcon {
+  width: 12px;
+  height: 12px;
+}
+
+img#searchIcon {
+  width: 15px;
+  height: 15px;
+  padding-top: 10px;
+}
+
+img#switch {
+  width: 15px;
+  height: 15px;
+}
+
+div.hourlyDaily {
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.hourlyDaily ul {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+  color: #06051d;
+}
+
+div.hourlyDaily img {
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+  background-color: #ffbdbd;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+div.search {
+  text-align: center;
+  padding-top: 10px;
+}
+
+input#searchInput {
+  border-color: black;
+  border-radius: 50px;
+  text-align: center;
+  width: 30%;
+  background-color: #ffbdbd;
+  margin: 0 auto;
+  display: block;
+  border-width: 1px;
+  font-family: Times New Roman;
+  height: 20px;
+}
+
+form {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width:450px) {
+
+  img {
+  width: 50px;
+  height: 50px;
+  }
+
+  h1 {
+  font-size : 50px;
+  padding-top : 30px;
+  }
+
+  h2 {
+  font-size : 20px;
+  }
+
+  p {
+  font-size : 12px;
+  }
+
+  #summary {
+  width: 80%;
+  }
+
+  input#searchInput {
+  width: 55%;
+  }
+}
