@@ -4,6 +4,13 @@ const request = require('request');
 const app = express();
 var geoip = require('geoip-lite');
 
+// Use the environment variable or use a given port
+const PORT = process.env.PORT || 8080;
+
+// Create a server, uses `handleRequest` which is function that takes
+// care of providing requested data
+const server = http.createServer(handleRequest);
+
 // darksky weather api key
 const apiKey = '71c3cf1a1b7f6003b89a311cd64c8c9d';
 // google geocode api key
@@ -256,12 +263,6 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
 */
-// Use the environment variable or use a given port
-const PORT = process.env.PORT || 8080;
-
-// Create a server, uses `handleRequest` which is function that takes
-// care of providing requested data
-const server = http.createServer(handleRequest);
 
 // Start the server
 server.listen(PORT, () => {
