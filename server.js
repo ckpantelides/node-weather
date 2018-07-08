@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
 var geoip = require('geoip-lite');
-const aws = require('aws-sdk');
 
 // darksky weather api key
 const apiKey = process.env.darsky;
