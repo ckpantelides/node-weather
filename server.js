@@ -24,11 +24,12 @@ var lon = "";
 // route for initial page load
 app.get('/', function (req, res) {
 
-  // request IP address for location geocoding
   //var ip = req.ip;
 
+  // request IP address for location geocoding (ignoring heroku forwarded address)
   var ipAddr = req.headers["x-forwarded-for"];
   if (ipAddr){
+    // if more than 1 IP address returned, select final address
     var list = ipAddr.split(",");
     ipAddr = list[list.length-1];
   } else {
