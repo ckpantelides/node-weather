@@ -28,9 +28,8 @@ app.get('/', function (req, res) {
   var ip = req.ip;
   // geocode with geoip-lite
   var geo = geoip.lookup(ip);
+  console.log(ip);
   console.log(geo);
-  console.log(process.env.google);
-  console.log(process.env.darksky);
 
   // find lat & lon using geoip; default to London if lookup fails
   var lat = geo ? geo.ll[0] : '51.5074';
