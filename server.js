@@ -25,10 +25,18 @@ var lon = "";
 app.get('/', function (req, res) {
 
   // request IP address for location geocoding
-  var ip = req.ip;
+  //var ip = req.ip;
+
+  var ipAddr = req.headers["x-forwarded-for"];
+  if (ipAddr){
+    var list = ipAddr.split(",");
+    ipAddr = list[list.length-1];
+  } else {
+    ipAddr = req.connection.remoteAddress;
+  }
   // geocode with geoip-lite
-  var geo = geoip.lookup(ip);
-  console.log(ip);
+  var geo = geoip.lookup(ipAddr);
+  console.log(ipAddr);
   console.log(geo);
 
   // find lat & lon using geoip; default to London if lookup fails
