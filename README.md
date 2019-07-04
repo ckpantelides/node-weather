@@ -13,7 +13,7 @@ I created the user authentication, using the werkzeug package to salt and hash l
 
 ![img3]
 
-[img1]: https://github.com/ckpantelides/ordered-thoughts/blob/images/ordered-crop1.jpg
+[img1]: https://github.com/ckpantelides/node-weather/blob/images/weather1.jpg
 [img2]: https://github.com/ckpantelides/ordered-thoughts/blob/images/ordered-crop2.jpg
 [img3]: https://github.com/ckpantelides/ordered-thoughts/blob/images/ordered-crop3.jpg
 
