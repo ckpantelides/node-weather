@@ -5,7 +5,7 @@ It's hosted [here](https://kyriweather.herokuapp.com/)
 
 A weather app built with node.
 
-I created the user authentication, using the werkzeug package to salt and hash login details. Flask-session ensures the user needs to be logged in to view the routes to add new thoughts etc. It's currently hosted on heroku, with a postgresql database to store the data in relational tables.
+It finds your location through an IP lookup. You can toggle between an hourly forecast or a daily forecast, as well as between Celsius and Fahrenheit. You can also search by place name and post-code.
 
 ![img1]       ![img2]
 
