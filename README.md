@@ -7,7 +7,7 @@ It's hosted [here](https://kyriweather.herokuapp.com/)
 
 It finds your location through an IP lookup. You can toggle between an hourly forecast or a daily forecast, as well as between Celsius and Fahrenheit. You can also search by place name and post-code.
 
-It relies on the DarkCity API for the weather forecast, and on Google's geocode API for the location search. The IP lookup is through the [geopip-lite](https://www.npmjs.com/package/geoip-lite) package
+It relies on the DarkCity API for the weather forecast, and on Google's geocode API for the location search. The IP lookup is through the [geoip-lite](https://www.npmjs.com/package/geoip-lite) package
 
 ![img1] ![img2]
 
